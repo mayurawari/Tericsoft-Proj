@@ -18,10 +18,10 @@ export const List = () => {
       try {
         const res = await Fecthdata(currentpage);
         // Manually adding delay to show loader its not AI its Coder
-        setTimeout(() => {
+        // setTimeout(() => {
           setPosts(res);
           setLoading(false);
-        }, 2000);
+        // }, 2000);
       } catch (error) {
         setError(error.message);
         setLoading(false);
